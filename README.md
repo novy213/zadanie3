@@ -3,6 +3,7 @@
 Aplikacja do rozliczania najmowanych mieszkań.
 
 ## Architektura projektu
+```
 project/
 ├── data/
 │   ├── apartments.json
@@ -10,7 +11,7 @@ project/
 │   ├── tentants.json
 │   └── transfers.json
 └── main.py
-
+```
 Współtworzący:
 ``` Kajetan "_Kezion" Zaradniak ``` <br>
 ``` Adrian "adi" Bartoś ```
