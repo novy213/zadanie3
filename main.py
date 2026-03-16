@@ -138,4 +138,4 @@ if __name__ == '__main__':
         print(f"Nazwa najemncy: {tenant.name}, Mieszkanie najemncy: {tenant.apartment}, Pokoj najemncy: {tenant.room}, Kwota czynszy[PLN]: {tenant.rent_pln}, Kwota zaliczki[PLN]: {tenant.deposit_pln}, Poczatek umowy: {tenant.date_agreement_from}, Koniec umowy: {tenant.date_agreement_to}\n")
         for transfer in manager.transfers:
             if transfer.tenant == tenant.name:
-                print(f"Kwota przelewu[PLN]: {transfer.amount_pln}, Data przelewu: {transfer.date}, Rok przelewu: {transfer.settlement_year}, Miesiac przelewu: {transfer.settlement_month}")
+                print(f"Kwota przelewu[PLN]:  {transfer.amount_pln}, Data przelewu: {transfer.date}, Rok przelewu: {transfer.settlement_year}, Miesiac przelewu: {transfer.settlement_month}")
