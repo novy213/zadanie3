@@ -4,6 +4,7 @@ from typing import Dict, List
 import json
 
 
+
 class Parameters(BaseModel):
     apartments_json_path: str = 'data/apartments.json'
     tenants_json_path: str = 'data/tenants.json'
@@ -49,6 +50,14 @@ class Tenant(BaseModel):
         assert isinstance(data, dict), "Expected a dictionary of tenants"
         return {key: Tenant(**tenant) for key, tenant in data.items()}
     
+
+class ApartmentSettlement(BaseModel) :
+    apartment: Apartment
+    bills: int
+    rent: int
+    year: int 
+    nonth: int
+    remaining_bills: int
 
 class Transfer(BaseModel):
     amount_pln: float
